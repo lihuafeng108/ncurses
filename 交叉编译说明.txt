@@ -1,0 +1,8 @@
+1.执行make clean命令
+2.执行(配置命令，其中--prefix根据实际安装路径作出修改)
+# am335x
+./configure --with-shared --without-normal --without-debug --build=i686 --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --prefix=/mnt/share/build --without-ada
+# am389x
+./configure --with-shared --without-normal --without-debug --build=i686 --host=arm-none-linux-gnueabi --target=arm-none-linux-gnueabi --prefix=/mnt/share/build --without-ada
+2.执行make命令
+3.执行make install命令
